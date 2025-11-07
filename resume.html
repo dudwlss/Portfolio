@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Website | 이력서</title>
+    <meta name="description" content="학력, 경력, 기술 스택, 자격증 소개" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo">Y</div>
+          <span>Young • Personal Website</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">메인</a>
+          <a class="active" href="resume.html">이력서</a>
+          <a href="favorites.html">즐겨찾기</a>
+          <a href="contact.html">연락처</a>
+          <a href="hobby.html">취미</a>
+          <a href="gallery.html">갤러리</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>이력서</h1>
+
+      <section class="cards">
+        <article class="card">
+          <h3>학력</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>경력</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>기술 스택</h3>
+          <div class="chip">HTML</div>
+          <div class="chip">CSS</div>
+          <div class="chip">python</div>
+          <div class="chip">MySQL</div>
+        </article>
+      </section>
+
+      <section style="margin-top: 28px">
+        <h2>자격증 / 수상</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>명칭</th>
+              <th>발급/주관</th>
+              <th>취득일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>자격증</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>수상</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        © <span id="year"></span> Young. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

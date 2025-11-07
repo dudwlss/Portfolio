@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Website | 즐겨찾기</title>
+    <meta name="description" content="자주 이용하는 웹사이트 목록" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo">Y</div>
+          <span>Young • Personal Website</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">메인</a>
+          <a href="resume.html">이력서</a>
+          <a class="active" href="favorites.html">즐겨찾기</a>
+          <a href="contact.html">연락처</a>
+          <a href="hobby.html">취미</a>
+          <a href="gallery.html">갤러리</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>자주 가는 사이트</h1>
+      <ul class="link-list" style="margin-top: 16px">
+        <li class="link-item">
+          <div>
+            <strong>DEEPLOL</strong>
+            <div class="muted">롤 필수 사이트</div>
+          </div>
+          <a href="https://www.deeplol.gg/" target="_blank" rel="noopener"
+            >바로가기 →</a
+          >
+        </li>
+        <li class="link-item">
+          <div>
+            <strong>Github</strong>
+            <div class="muted">프로젝트 소스 관리와 오픈소스 탐색</div>
+          </div>
+          <a href="https://github.com/" target="_blank" rel="noopener"
+            >바로가기 →</a
+          >
+        </li>
+        <li class="link-item">
+          <div>
+            <strong>Stack Overflow</strong>
+            <div class="muted">프로그래밍 Q&A 커뮤니티</div>
+          </div>
+          <a href="https://stackoverflow.com/" target="_blank" rel="noopener"
+            >바로가기 →</a
+          >
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        © <span id="year"></span> Young. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

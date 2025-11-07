@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Website | 갤러리</title>
+    <meta name="description" content="사진과 기록을 모아두는 갤러리" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo">Y</div>
+          <span>Young • Personal Website</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">메인</a>
+          <a href="resume.html">이력서</a>
+          <a href="favorites.html">즐겨찾기</a>
+          <a href="contact.html">연락처</a>
+          <a href="hobby.html">취미</a>
+          <a class="active" href="gallery.html">갤러리</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>갤러리</h1>
+      <p class="muted">여행, 취미, 일상 사진을 모았습니다.</p>
+
+      <section class="gallery-grid" style="margin-top: 16px">
+        <figure>
+          <img src="img/일본1.jpg" alt="일본" />
+          <figcaption class="muted">황혼의 도시 스카이라인</figcaption>
+        </figure>
+        <figure>
+          <img src="img/일본2.jpg" alt="도톤보리" />
+          <figcaption class="muted">오사카 네온사인 밤</figcaption>
+        </figure>
+        <figure>
+          <img src="img/풍경.jpg" alt="갤러리 이미지 3" />
+          <figcaption class="muted">불타는 노을 속 질주</figcaption>
+        </figure>
+        <figure>
+          <img src="img/시루.jpg" alt="시루" />
+          <figcaption class="muted">시루</figcaption>
+        </figure>
+        <figure>
+          <img src="img/호떡.jpg" alt="호떡" />
+          <figcaption class="muted">호떡이</figcaption>
+        </figure>
+        <figure>
+          <img src="img/하늘.jpg" alt="갤러리 이미지 6" />
+          <figcaption class="muted">따스한 하늘의 물결</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        © <span id="year"></span> Young. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

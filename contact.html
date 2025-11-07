@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Website | 연락처</title>
+    <meta name="description" content="이메일, 깃허브, 블로그 등 연락 정보" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo">Y</div>
+          <span>Young • Personal Website</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">메인</a>
+          <a href="resume.html">이력서</a>
+          <a href="favorites.html">즐겨찾기</a>
+          <a class="active" href="contact.html">연락처</a>
+          <a href="hobby.html">취미</a>
+          <a href="gallery.html">갤러리</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>연락처</h1>
+      <section class="cards">
+        <article class="card">
+          <h3>이메일</h3>
+          <p>
+            <a href="mailto:ghkddidwls@gmail.com">ghkddidwls@gmail.com</a>
+          </p>
+        </article>
+        <article class="card">
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/dudwlss" target="_blank" rel="noopener"
+              >github.com/dudwlss</a
+            >
+          </p>
+        </article>
+        <article class="card">
+          <h3>블로그</h3>
+          <p>
+            <a
+              href="https://velog.io/@hwang_c/posts"
+              target="_blank"
+              rel="noopener"
+              >velog.io/@hwang_c/posts</a
+            >
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        © <span id="year"></span> Young. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
